@@ -19,7 +19,53 @@ else:
 
 
 # weight conversion
-weight = input('Enter ur weight in L or K')
-L = weight * 2
-K = weight * 3
-print()
+# weight = int(input('Weight '))
+# unit = input('(L)bs or (K)g: ')
+# if unit.upper() == "L":
+#     converted = weight * 0.45
+#     print(f"You are {converted} Kilos")
+# else:
+#     converted = weight // 0.45
+#     print(f"You are {converted} Pounds")
+#
+
+
+# While loops
+# i = 1
+# while i <= 5:
+#     print('*' * i)
+#     i = i + 1
+# print('Done')
+
+# Guessing Game
+# secretNumber = 9
+# guessCount = 0
+# guessLimit = 3
+# while guessCount < guessLimit:
+#     guess = int(input('Guess '))
+#     guessCount += 1
+#     if guess == secretNumber:
+#         print('You won')
+#         break
+# else:
+#     print('You lose')
+#
+
+# Car Game
+command = ""
+while True:
+    command = input("> ").lower()
+    if command == "start":
+        print("car started...")
+    elif command == "stop":
+        print("car stopped...")
+    elif command == "help":
+        print("""
+start - to start the car
+stop - to stop the car
+quit - to quit
+        """)
+    elif command == "quit":
+        break
+    else:
+        print("sorry, i don't understand you")
