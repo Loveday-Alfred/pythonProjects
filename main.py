@@ -101,18 +101,94 @@ else:
 
 
 
-number = [5, 2, 5, 2, 2]
-for num in number:
-    print("*" * num)
+# number = [5, 2, 5, 2, 2]
+# for num in number:
+#     print("*" * num)
+#
+#
+# # List
+# names = ['John', 'Bob', 'Mosh', 'Sarah', 'Mary']
+# names[4] = 'Marry'
+# print(names[2:4])
+# print(names)
+#
+#
+# large = [2, 4, 6, 8, 9, 10, 30, 50, 90, 49, 44]
+# max = large[0]
+# for lg in large:
+#     if lg > max:
+#         max = lg
+# print(max)
 
 
-# List
-names = ['John', 'Bob', 'Mosh', 'Sarah', 'Mary']
-names[4] = 'Marry'
-print(names[2:4])
-print(names)
+
+# 2 dimensional List
+# matrix = [
+#     [2, 4, 5],
+#     [4, 8, 7],
+#     [7, 8, 7]
+# ]
+#
+# # print(matrix[0][2])
+# for row in matrix:
+#     print(row)
+#     for item in row:
+#         print(item)
+#
+#
+# List methods
+# number = [2, 4, 5, 6, 8, 9, 20]
+# number.insert(0:20)
+# number.append(20)
+# number.remove(5)
+# number.pop()
+# number.clear()
+# number.sort()
+# number.reverse()
+# number2 = number.copy() gives another copy of the list
 
 
-large = [2, 4, 6, 8, 9, 10, 30, 50, 90, 49, 44]
-for lg in large:
-    print(lg)
+
+
+dup = [2, 2, 3, 3, 5, 6, 7, 8, 9, 8, 3]
+unique = []
+for dups in dup:
+    if dups not in unique:
+        unique.append(dups)
+print(unique)
+
+
+
+
+# Tuples
+# tuples can't be modify, they r immutable
+# numbers = (1, 4, 7)
+
+
+# unpacking
+# i find unpacking very similar to destructuring
+coordinates = (1, 3, 6)
+x, y, z = coordinates
+print(x, y, z)
+
+
+
+
+
+# Dictionaries in python
+# we use dictionaries to store key pairs in python
+# i find dictionaries similar to objects in JS
+# customer = {
+#     "name": "John Smith",
+#     "age": 30,
+#     "isVerified": True
+# }
+# print(customer["isVerified"])
+# customer["birthdate"] = "Jan 1 1999"
+# print(customer["birthdate"])
+
+
+
+
+
+phone = input("Phone: ")
