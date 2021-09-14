@@ -191,4 +191,21 @@ print(x, y, z)
 
 
 
-phone = input("Phone: ")
+# phone = input("Phone: ")
+
+
+
+
+
+
+
+# functions
+
+def greetUser (firstName, lastName):
+    print(f"Hello {firstName} {lastName}")
+    print("Loveday")
+
+
+greetUser('Jane', 'Doe')
+
+# Arguements
