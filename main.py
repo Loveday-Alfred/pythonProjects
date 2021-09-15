@@ -150,12 +150,12 @@ else:
 
 
 
-dup = [2, 2, 3, 3, 5, 6, 7, 8, 9, 8, 3]
-unique = []
-for dups in dup:
-    if dups not in unique:
-        unique.append(dups)
-print(unique)
+# dup = [2, 2, 3, 3, 5, 6, 7, 8, 9, 8, 3]
+# unique = []
+# for dups in dup:
+#     if dups not in unique:
+#         unique.append(dups)
+# print(unique)
 
 
 
@@ -167,9 +167,9 @@ print(unique)
 
 # unpacking
 # i find unpacking very similar to destructuring
-coordinates = (1, 3, 6)
-x, y, z = coordinates
-print(x, y, z)
+# coordinates = (1, 3, 6)
+# x, y, z = coordinates
+# print(x, y, z)
 
 
 
@@ -201,11 +201,101 @@ print(x, y, z)
 
 # functions
 
-def greetUser (firstName, lastName):
-    print(f"Hello {firstName} {lastName}")
-    print("Loveday")
-
-
-greetUser('Jane', 'Doe')
+# def greetUser (firstName, lastName):
+#     print(f"Hello {firstName} {lastName}")
+#     print("Loveday")
+#
+#
+# greetUser('Jane', 'Doe')
 
 # Arguements
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Error Handling aka exception
+# try:
+#     age = int(input("Age? "))
+#     income = 20000
+#     risk = income / age
+#     print(age)
+# except ZeroDivisionError:
+#     print("Age cannot be 0")
+# except ValueError:
+#     print("Invalid input")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    # classes
+# class Point:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+#     def move(self):
+#         print("move")
+#
+#     def draw(self):
+#         print("draw")
+#
+# point = Point(10, 20)
+# point.x = 11
+# print(point.x)
+
+# point1 = Point()
+# point1.x = 10
+# point1.y = 20
+# print(point1.x)
+# print(point1.y)
+# point1.draw()
+
+
+
+
+
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def talk(self):
+        print(f"Hi, I am {self.name}")
+
+
+john = Person("Jane Doe")
+john.talk()
+
+bob = Person("Mary Jane")
+bob.talk()
+
+
