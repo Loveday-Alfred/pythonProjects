@@ -1,22 +1,22 @@
 # conditionals
 
-housePrice = 1000000
-hasGoodCredit = False
-if hasGoodCredit:
-    downPayment = 0.1 * housePrice
-else:
-    downPayment = 0.2 * housePrice
-print(f'down payment is ${downPayment}')
-
-# Logical operators
-minName = 'jon'
-if len(minName) < 3:
-    print('Name must be at least three char long')
-elif len(minName) > 50:
-    print('Name must be 50 char or less')
-else:
-    print('name looks good')
-
+# housePrice = 1000000
+# hasGoodCredit = False
+# if hasGoodCredit:
+#     downPayment = 0.1 * housePrice
+# else:
+#     downPayment = 0.2 * housePrice
+# print(f'down payment is ${downPayment}')
+#
+# # Logical operators
+# minName = 'jon'
+# if len(minName) < 3:
+#     print('Name must be at least three char long')
+# elif len(minName) > 50:
+#     print('Name must be 50 char or less')
+# else:
+#     print('name looks good')
+#
 
 # weight conversion
 # weight = int(input('Weight '))
@@ -284,18 +284,94 @@ else:
 
 
 
-class Person:
-    def __init__(self, name):
-        self.name = name
+# class Person:
+#     def __init__(self, name):
+#         self.name = name
+#
+#     def talk(self):
+#         print(f"Hi, I am {self.name}")
+#
+#
+# john = Person("Jane Doe")
+# john.talk()
+#
+# bob = Person("Mary Jane")
+# bob.talk()
 
-    def talk(self):
-        print(f"Hi, I am {self.name}")
 
 
-john = Person("Jane Doe")
-john.talk()
 
-bob = Person("Mary Jane")
-bob.talk()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# class Mammal:
+#     def walk(self):
+#         print("walk")
+
+
+# class Dog(Mammal):
+#     def bark(self):
+#         print("bark")
+#
+#
+# class Cat(Mammal):
+#     def meow(self):
+#         print("Meow")
+#
+# cat1 = Cat()
+# cat1.meow()
+# cat1.walk()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# modules
+
+# import converters
+# from converters import libsToKg
+#
+# print(libsToKg(100))
+#
+# print(converters.KgToLibs(70))
+
+
+
+
+
+import  utils
+
+numbers = [2, 5, 8, 9,4 10, 22, 2, 4]
+max = utils.findMax(numbers)
+print(max)
+
+
+
+
+
+
 
 
